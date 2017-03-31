@@ -36,7 +36,7 @@ void renderDisplay(bool frame[256]) {
 }
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(250000);
   for(int address = 0; address< DEVICE_COUNT; address++) {
     lc.shutdown(address, false);
     lc.setIntensity(address, 0);
